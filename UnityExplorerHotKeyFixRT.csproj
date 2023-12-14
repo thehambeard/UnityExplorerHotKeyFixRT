@@ -81,7 +81,9 @@
     <Compile Include="Utility\ModEventHandler.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="info.json" />
+    <None Include="info.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
